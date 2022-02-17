@@ -20,15 +20,16 @@ const ccAmount = document.querySelector('#qty-cc')
 const sugarPlusBtn = document.querySelector('#add-sugar')
 const sugarMinBtn = document.querySelector('#minus-sugar')
 const sugarAmount = document.querySelector('#qty-sugar')
+const totalAmount = document.querySelector('#qty-total')
 // Code to update name display
 credit.textContent = `Created by ${yourName}`
 
 // Event listener for clicks on the "+" button for Gingerbread cookies
-gbMinusBtn.addEventListener("onclick", function(){
-    if (gb > 0); (gb - 1)
+gbMinusBtn.addEventListener("click", function(){
+    
 }
-gbPlusBtn.addEventListener("onclick", function(){
-    (gbAmount = gb + 1)
+gbPlusBtn.addEventListener("click", function(){
+    (gb + 1);
 }
 // HINT: You can delete this console.log after you no longer need it!
 
