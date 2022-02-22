@@ -7,7 +7,6 @@ let yourName = "Adrian Smith" // HINT: Replace this with your own name!
 let gb = 0 // Gingerbread
 let cc = 0 // Chocolate Chip
 let sugar = 0 // Sugar Sprinkle
-let total = gb + cc + sugar // Total Number of Cookies
 
 // selecting the element with an id of credit
 const credit = document.querySelector('#credit')
@@ -45,50 +44,51 @@ credit.textContent = `Created by ${yourName}`
 // Event Listenter Functions
 
 function gbAddFunction(){
-    (gb = ++gb)
+    gb++
     console.log(gb)
     gbAmount.innerHTML = gb
+    totalAmount.innerHTML = gb+cc+sugar
     return
 }
 function gbSubFunction(){
     if (gb >= 0){
-        (gb = --gb)
+        gb--
     }
     console.log(gb)
     gbAmount.innerHTML = gb
+    totalAmount.innerHTML = gb+cc+sugar
     return
 }
 function ccAddFunction(){
-    (cc = ++cc)
+    cc++
     console.log(cc)
     ccAmount.innerHTML = cc
+    totalAmount.innerHTML = gb+cc+sugar
     return
 }
 function ccSubFunction(){
     if(cc >= 0){
-        (cc = --cc)
+        cc--
     }
     console.log(cc)
     ccAmount.innerHTML = cc
+    totalAmount.innerHTML = gb+cc+sugar
     return
 }
 function sugarAddFunction(){
-    (sugar = ++sugar)
+    sugar++
     console.log(sugar)
     sugarAmount.innerHTML = sugar
+    totalAmount.innerHTML = gb+cc+sugar
     return
 }
 function sugarSubFunction(){
     if (sugar >= 0){
-        (sugar = --sugar)
+        (sugar--)
     }
     console.log(sugar)
     sugarAmount.innerHTML = sugar
-    return
-}
-function totalSumFunction(){
-    console.log(allCookies)
-    totalAmount.innerHTML = allCookies
+    totalAmount.innerHTML = gb+cc+sugar
     return
 }
 // HINT: You can delete this console.log after you no longer need it!
