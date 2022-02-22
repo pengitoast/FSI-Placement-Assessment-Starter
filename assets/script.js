@@ -7,7 +7,7 @@ let yourName = "Adrian Smith" // HINT: Replace this with your own name!
 let gb = 0 // Gingerbread
 let cc = 0 // Chocolate Chip
 let sugar = 0 // Sugar Sprinkle
-let allCookies = (gb + cc + sugar) // Total Number of Cookies
+let total = gb + cc + sugar // Total Number of Cookies
 
 // selecting the element with an id of credit
 const credit = document.querySelector('#credit')
@@ -87,7 +87,6 @@ function sugarSubFunction(){
     return
 }
 function totalSumFunction(){
-    (allCookies = gb + cc + sugar)
     console.log(allCookies)
     totalAmount.innerHTML = allCookies
     return
